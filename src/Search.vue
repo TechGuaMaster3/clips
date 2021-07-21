@@ -77,7 +77,7 @@
               </v-flex>
             </v-layout>
           </ais-hits>
-          <v-layout class="pagi pt-2 pb-2" row wrap align-content-center>
+          <v-layout class="pagi pt-2 pb-2" wrap align-content-center>
             <v-flex xs12>
               <ais-pagination class="container pa-0">
                 <div
