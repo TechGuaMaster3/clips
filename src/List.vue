@@ -99,7 +99,7 @@
 </template>
 
 <script>
-const API_BASE = 'https://crs-dlbot.herokuapp.com/helix/';
+const API_BASE = 'https://crs-api-server.onrender.com/helix/';
 
 export default {
   name: 'App',
@@ -278,7 +278,7 @@ export default {
       this.loading = false;
     },
     async getJSON() {
-      this.clipJSON = await this.getRequest('//crs-dlbot.herokuapp.com/clips');
+      this.clipJSON = await this.getRequest('//crs-api-server.onrender.com/clips');
       this.loadtext = '表單資料讀取中...';
       this.clipNum = this.clipJSON.reduce((result, item, index) => {
         result[item.ID] = { Num: item.Num, Index: index }; // eslint-disable-line
